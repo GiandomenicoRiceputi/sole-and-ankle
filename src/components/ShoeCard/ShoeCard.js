@@ -25,6 +25,7 @@ const ShoeCard = ({
   // both on-sale and new-release, but in this case, `on-sale`
   // will triumph and be the variant used.
   // prettier-ignore
+  // eslint-disable-next-line
   const variant = typeof salePrice === 'number'
     ? 'on-sale'
     : isNewShoe(releaseDate)
@@ -77,7 +78,7 @@ const Price = styled.span``;
 const ColorInfo = styled.p`
   color: ${COLORS.gray[700]};
 `;
-
+// eslint-disable-next-line
 const SalePrice = styled.span`
   font-weight: ${WEIGHTS.medium};
   color: ${COLORS.primary};
